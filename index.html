@@ -11,12 +11,12 @@
     align-items: flex-start;
     gap: 0px;
     margin-top: 20px;
-    font-family: 'Arial', sans-serif; /* Changed font */
-    background: linear-gradient(to bottom, #ded7cf, #d3cdca); /* Orange gradient background */
+    font-family: 'Arial', sans-serif; 
+    background: linear-gradient(to bottom, #ded7cf, #d3cdca); 
     color: white;
     min-height: 100vh;
     position: relative;
-    overflow: hidden; /* Hide overflow for a cleaner look */
+    overflow: hidden;
 }
 
 .credits {
@@ -24,8 +24,8 @@
         bottom: 5px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        background-color: rgba(255, 255, 255, 0.1); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
         color: white !important;
         padding: 12px 20px;
         border-radius: 8px;
@@ -39,7 +39,7 @@
     }
     @media (max-width: 480px) {
         .credits {
-            bottom: 70px; /* Above music toggle */
+            bottom: 70px; 
             width: 100%;
             max-width: 100%;
             border-radius: 0;
@@ -91,7 +91,7 @@
             color: #e9e3d5;
             margin-bottom: 5px;
             margin-top: 5px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             font-weight: bold;
         }
 
@@ -161,53 +161,53 @@
     margin-top: 50px;
     padding: 20px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 
 #instructions-section h2 {
     color: #e7e3d4;
-    font-size: 32px; /* Increased size */
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
 #instructions-section p {
-    color: #ffffff; /* Lighter text color */
-    font-size: 20px; /* Increased size */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+    color: #ffffff; 
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     font-weight: bold;
     margin-bottom: 30px;
-    line-height: 1.6; /* Improved readability */
+    line-height: 1.6; 
 }
 
 #start-button {
     padding: 15px 30px;
     background-color: #121210;
     color: white;
-    font-size: 22px; /* Increased size */
+    font-size: 22px; 
     font-weight: bold;
-    border-radius: 12px; /* More rounded corners */
+    border-radius: 12px; 
     cursor: pointer;
     border: none;
     border: 1px solid #e7e3d4;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Button shadow */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease;
 }
 
 
 #start-button:hover {
-    background-color: #8e8e8e; /* Darker shade on hover */
+    background-color: #8e8e8e; 
 }
 
         #game-section {
-            display: none; /* Initially hidden */
+            display: none;
         }
 
-        /* Vertical Timer Styles wooooooooooooooooork no chan*/ 
+       
         #vertical-timer {
             width: 30px;
             height: 200px;
@@ -301,9 +301,9 @@
       font-size: 32px;
       font-weight: bold;
       color: #ffffff;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
-      background-color: rgba(151, 151, 151, 0.432); /* Semi-transparent background */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+      background-color: rgba(151, 151, 151, 0.432); 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
       padding: 30px 50px;
       border-radius: 20px;
       z-index: 999;
@@ -314,8 +314,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover; /* Ensures full coverage */
-    z-index: -1; /* Puts video behind content */
+    object-fit: cover; 
+    z-index: -1; 
 }
     </style>
 </head>
@@ -365,21 +365,7 @@
 ">
     🔊 Music On
 </button>
-<!-- <button id="game-toggle" style="
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-    padding: 10px 15px;
-    background-color: #FF4500;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    z-index: 10;
-">
-    🛑 Disable Game
-</button> -->
+
 <div id="mode-message"></div>
 <video autoplay loop muted playsinline id="background-video">
     <source src="ocean.mp4" type="video/mp4">
@@ -407,11 +393,10 @@
 
         const modeMessage = document.getElementById("mode-message");
         startButton.addEventListener("click", () => {
-        instructionsSection.style.display = "none"; // Hide instructions
-        gameSection.style.display = "block";       // Show game section
-        startGame();                               // Start the game
-    });
-        // Function to generate a grid with embedded target words
+        instructionsSection.style.display = "none"; 
+        gameSection.style.display = "block";       
+        startGame();                               
+
         function generateGridLetters(targetWord, count, gridSize) {
             const gridLetters = Array(gridSize).fill(null);
             const rows = Math.sqrt(gridSize);
@@ -616,18 +601,7 @@
             modeMessage.style.display = "none";
         }, 2000);
     }
- /*    document.getElementById("game-toggle").addEventListener("click", () => {
-        if (gameActive) {
-            gameActive = false;
-            clearInterval(timerInterval);
-            showModeMessage("Meditation mode off");
-        } else {
-            gameActive = true;
-            timerInterval = setInterval(updateTimer, 1000);
-            showModeMessage("Meditation mode on");
-        }
-    }); */
-        // Initialize
+
         document.querySelector(".button-text").addEventListener("click", startGame);
         startGame();
     });
@@ -635,14 +609,13 @@
     const bgMusic = document.getElementById("bg-music");
 const musicToggle = document.getElementById("music-toggle");
 
-// Start music when game loads
-bgMusic.volume = 0.4; // Optional: set volume
+bgMusic.volume = 0.4; 
 bgMusic.play().catch(() => {
-    // Might need user interaction on mobile before audio plays
+    
     musicToggle.textContent = "🔇 Music Off";
 });
 
-// Toggle play/pause
+
 musicToggle.addEventListener("click", () => {
     if (bgMusic.paused) {
         bgMusic.play();
@@ -653,7 +626,7 @@ musicToggle.addEventListener("click", () => {
     }
 });
 const gameWrapper = document.getElementById("game-wrapper");
-//const gameToggle = document.getElementById("game-toggle");
+
 let gameDisabled = false;
 
 gameToggle.addEventListener("click", () => {
