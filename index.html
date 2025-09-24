@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>find Rialo</title>
+    <title>Seeing Rialo</title>
     <style>
         body {
     display: flex;
@@ -11,12 +11,12 @@
     align-items: flex-start;
     gap: 0px;
     margin-top: 20px;
-    font-family: 'Arial', sans-serif; 
-    background: linear-gradient(to bottom, #ded7cf, #d3cdca); 
+    font-family: 'Arial', sans-serif; /* Changed font */
+    background: linear-gradient(to bottom, #ded7cf, #d3cdca); /* Orange gradient background */
     color: white;
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Hide overflow for a cleaner look */
 }
 
 .credits {
@@ -24,8 +24,8 @@
         bottom: 5px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: rgba(255, 255, 255, 0.1); 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
         color: white !important;
         padding: 12px 20px;
         border-radius: 8px;
@@ -39,7 +39,7 @@
     }
     @media (max-width: 480px) {
         .credits {
-            bottom: 70px; 
+            bottom: 70px; /* Above music toggle */
             width: 100%;
             max-width: 100%;
             border-radius: 0;
@@ -91,7 +91,7 @@
             color: #e9e3d5;
             margin-bottom: 5px;
             margin-top: 5px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
             font-weight: bold;
         }
 
@@ -161,53 +161,53 @@
     margin-top: 50px;
     padding: 20px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 
 #instructions-section h2 {
     color: #e7e3d4;
-    font-size: 32px;
+    font-size: 32px; /* Increased size */
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
 }
 
 #instructions-section p {
-    color: #ffffff; 
-    font-size: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #ffffff; /* Lighter text color */
+    font-size: 20px; /* Increased size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
     font-weight: bold;
     margin-bottom: 30px;
-    line-height: 1.6; 
+    line-height: 1.6; /* Improved readability */
 }
 
 #start-button {
     padding: 15px 30px;
     background-color: #121210;
     color: white;
-    font-size: 22px; 
+    font-size: 22px; /* Increased size */
     font-weight: bold;
-    border-radius: 12px; 
+    border-radius: 12px; /* More rounded corners */
     cursor: pointer;
     border: none;
     border: 1px solid #e7e3d4;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
-    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Button shadow */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 
 #start-button:hover {
-    background-color: #8e8e8e; 
+    background-color: #8e8e8e; /* Darker shade on hover */
 }
 
         #game-section {
-            display: none;
+            display: none; /* Initially hidden */
         }
 
-       
+        /* Vertical Timer Styles wooooooooooooooooork no chan*/ 
         #vertical-timer {
             width: 30px;
             height: 200px;
@@ -301,9 +301,9 @@
       font-size: 32px;
       font-weight: bold;
       color: #ffffff;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-      background-color: rgba(151, 151, 151, 0.432); 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+      background-color: rgba(151, 151, 151, 0.432); /* Semi-transparent background */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
       padding: 30px 50px;
       border-radius: 20px;
       z-index: 999;
@@ -314,8 +314,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover; 
-    z-index: -1; 
+    object-fit: cover; /* Ensures full coverage */
+    z-index: -1; /* Puts video behind content */
 }
     </style>
 </head>
@@ -365,7 +365,21 @@
 ">
     🔊 Music On
 </button>
-
+<!-- <button id="game-toggle" style="
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #FF4500;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+">
+    🛑 Disable Game
+</button> -->
 <div id="mode-message"></div>
 <video autoplay loop muted playsinline id="background-video">
     <source src="ocean.mp4" type="video/mp4">
@@ -393,10 +407,11 @@
 
         const modeMessage = document.getElementById("mode-message");
         startButton.addEventListener("click", () => {
-        instructionsSection.style.display = "none"; 
-        gameSection.style.display = "block";       
-        startGame();                               
-
+        instructionsSection.style.display = "none"; // Hide instructions
+        gameSection.style.display = "block";       // Show game section
+        startGame();                               // Start the game
+    });
+        // Function to generate a grid with embedded target words
         function generateGridLetters(targetWord, count, gridSize) {
             const gridLetters = Array(gridSize).fill(null);
             const rows = Math.sqrt(gridSize);
@@ -601,7 +616,18 @@
             modeMessage.style.display = "none";
         }, 2000);
     }
-
+ /*    document.getElementById("game-toggle").addEventListener("click", () => {
+        if (gameActive) {
+            gameActive = false;
+            clearInterval(timerInterval);
+            showModeMessage("Meditation mode off");
+        } else {
+            gameActive = true;
+            timerInterval = setInterval(updateTimer, 1000);
+            showModeMessage("Meditation mode on");
+        }
+    }); */
+        // Initialize
         document.querySelector(".button-text").addEventListener("click", startGame);
         startGame();
     });
@@ -609,13 +635,14 @@
     const bgMusic = document.getElementById("bg-music");
 const musicToggle = document.getElementById("music-toggle");
 
-bgMusic.volume = 0.4; 
+// Start music when game loads
+bgMusic.volume = 0.4; // Optional: set volume
 bgMusic.play().catch(() => {
-    
+    // Might need user interaction on mobile before audio plays
     musicToggle.textContent = "🔇 Music Off";
 });
 
-
+// Toggle play/pause
 musicToggle.addEventListener("click", () => {
     if (bgMusic.paused) {
         bgMusic.play();
@@ -626,7 +653,7 @@ musicToggle.addEventListener("click", () => {
     }
 });
 const gameWrapper = document.getElementById("game-wrapper");
-
+//const gameToggle = document.getElementById("game-toggle");
 let gameDisabled = false;
 
 gameToggle.addEventListener("click", () => {
